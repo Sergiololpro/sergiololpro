@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-ng-app="workApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css?v_09052017">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/favicon-touch.ico">
+  <meta name="keywords" content="web-программист, html-верстальщик, резюме">
+  <meta name="description" content="Сайт-резюме web-программиста, содержащий контактную информацию, ключевые навыки и примеры работ.">
+  <title>Sergey Kudinov web-developer</title>
+</head>
+
+<body>
+  <div id="vue">
+    <div class="wrapper-1180">
+      <div class="content__wrp" :class="{ active: page_1 }">
+        <div class="content__top">
+          <div class="top__title inline-block-top">
+            <div class="top__icon inline-block-top"></div>
+            <h1 class="top__text inline-block-top">My works</h1>
+          </div>
+          <div class="top__buttons inline-block-top" @click="page_1 = false">
+            <div class="top__button inline-block-top">
+              <div class="top__button__1"></div>
+            </div>
+            <div class="top__button inline-block-top" @click="page_1 = false">
+              <div class="top__button__2">
+                <div></div>
+              </div>
+            </div>
+            <div class="top__button top__button-close inline-block-top" @click="page_1 = false">
+              <div class="top__button__3">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__grey">
+          <div class="grey__top">
+            <div class="grey__menu inline-block-top">
+              <div class="inline-block-top">File</div>
+              <div class="inline-block-top">Edit</div>
+              <div class="inline-block-top">View</div>
+              <div class="inline-block-top">Favorites</div>
+              <div class="inline-block-top">Tools</div>
+              <div class="inline-block-top">Help</div>
+            </div>
+            <div class="grey__logo inline-block-top">
+              <div></div>
+            </div>
+          </div>
+          <div class="grey__middle">
+            <div class="grey__back inline-block-top">
+              <div class="grey__back__arrow inline-block-top">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="grey__back__text inline-block-top">Back</div>
+              <div class="grey__back__triangle inline-block-top"></div>
+            </div>
+            <div class="grey__back inline-block-top">
+              <div class="grey__back__arrow grey__back__arrow-next inline-block-top">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="grey__back__triangle grey__back__triangle-next inline-block-top"></div>
+            </div>
+            <div class="grey__folder inline-block-top">
+              <div></div>
+            </div>
+            <div class="grey__search inline-block-top">
+              <div class="grey__search__icon inline-block-top"></div>
+              <div class="grey__search__text inline-block-top">Search</div>
+            </div>
+            <div class="grey__search inline-block-top">
+              <div class="grey__search__icon grey__search__icon-folders inline-block-top"></div>
+              <div class="grey__search__text inline-block-top">Folders</div>
+            </div>
+            <div class="grey__line inline-block-top"></div>
+            <div class="grey__search grey__search-table inline-block-top">
+              <div class="grey__search__icon grey__search__icon-table inline-block-top"></div>
+              <div class="grey__back__triangle inline-block-top"></div>
+            </div>
+          </div>
+          <div class="grey__bottom">
+            <div class="grey__address inline-block-top">Address</div>
+            <div class="grey__input inline-block-top">
+          <div class="grey__folders"></div>
+              <input type="text" value="C:\My works">
+              <div class="grey__icon">
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="grey__go inline-block-top">
+              <div class="grey__go__arrow inline-block-top">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="grey__go__text inline-block-top">Go</div>
+            </div>
+          </div>
+        </div>
+        <div class="content__main">
+          <div class="content__center">
+            <div class="content__left inline-block-top">
+              <div class="left__list" :class="{ active: block_1 }">
+                <div class="list__title">
+                  <div class="list__text">File and Folder Tasks</div>
+                  <div class="list__button" @click="block_1 = !block_1">
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__content">
+                  <div class="list__element">
+                    <div class="list__icon list__icon-1"></div>
+                    <div class="icon__text">Make a new Folder</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-2"></div>
+                    <div class="icon__text">Publish this folder to the Web</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-3"></div>
+                    <div class="icon__text">Share this folder</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__list" :class="{ active: block_2 }">
+                <div class="list__title">
+                  <div class="list__text">Other Places</div>
+                  <div class="list__button" @click="block_2 = !block_2">
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__content">
+                  <div class="list__element">
+                    <div class="list__icon list__icon-4"></div>
+                    <div class="icon__text">Documents and Settings</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-5"></div>
+                    <div class="icon__text">My Documents</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-4"></div>
+                    <div class="icon__text">Shared Documents</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-6"></div>
+                    <div class="icon__text">My Computer</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-7"></div>
+                    <div class="icon__text">My Network Places</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__list" :class="{ active: block_3 }">
+                <div class="list__title">
+                  <div class="list__text">Details</div>
+                  <div class="list__button" @click="block_3 = !block_3">
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__content">
+                  <div class="list__small">Sergey Kudinov</div>
+                  <div class="list__small">File Folder</div>
+                  <div class="list__small">Date Modified: Saturday, July 11 2009, 5:46 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="content__right inline-block-top">
+              <a v-for="work in works" :href="`/links/${work.link}/`" target="_blank" class="content__element">
+                <div class="content__image inline-block-top" :style="`background-image: url(img/projects/${work.image});`"></div>
+                <div class="content__description inline-block-top">
+                  <div class="content__row-1">{{ work.name }}</div>
+                  <div class="content__row-2">
+                    <span>Технологии: </span><span>{{ work.technologies }}</span>
+                  </div>
+                  <div class="content__row-3">
+                    <span>Описание: </span><span>{{ work.description }}</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__wrp content__wrp-about" :class="{ active: page_2 }">
+        <div class="content__top">
+          <div class="top__title inline-block-top">
+            <div class="top__icon inline-block-top"></div>
+            <h2 class="top__text inline-block-top">About me</h2>
+          </div>
+          <div class="top__buttons inline-block-top">
+            <div class="top__button inline-block-top" @click="page_2 = false">
+              <div class="top__button__1"></div>
+            </div>
+            <div class="top__button inline-block-top" @click="page_2 = false">
+              <div class="top__button__2">
+                <div></div>
+              </div>
+            </div>
+            <div class="top__button top__button-close inline-block-top" @click="page_2 = false">
+              <div class="top__button__3">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__grey">
+          <div class="grey__top">
+            <div class="grey__menu inline-block-top">
+              <div class="inline-block-top">File</div>
+              <div class="inline-block-top">Edit</div>
+              <div class="inline-block-top">View</div>
+              <div class="inline-block-top">Faforites</div>
+              <div class="inline-block-top">Tools</div>
+              <div class="inline-block-top">Help</div>
+            </div>
+            <div class="grey__logo inline-block-top">
+              <div></div>
+            </div>
+          </div>
+          <div class="grey__middle">
+            <div class="grey__back inline-block-top">
+              <div class="grey__back__arrow inline-block-top">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="grey__back__text inline-block-top">Back</div>
+              <div class="grey__back__triangle inline-block-top"></div>
+            </div>
+            <div class="grey__back inline-block-top">
+              <div class="grey__back__arrow grey__back__arrow-next inline-block-top">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="grey__back__triangle grey__back__triangle-next inline-block-top"></div>
+            </div>
+            <div class="grey__folder inline-block-top">
+              <div></div>
+            </div>
+            <div class="grey__search inline-block-top">
+              <div class="grey__search__icon inline-block-top"></div>
+              <div class="grey__search__text inline-block-top">Search</div>
+            </div>
+            <div class="grey__search inline-block-top">
+              <div class="grey__search__icon grey__search__icon-folders inline-block-top"></div>
+              <div class="grey__search__text inline-block-top">Folders</div>
+            </div>
+            <div class="grey__line inline-block-top"></div>
+            <div class="grey__search grey__search-table inline-block-top">
+              <div class="grey__search__icon grey__search__icon-table inline-block-top"></div>
+              <div class="grey__back__triangle inline-block-top"></div>
+            </div>
+          </div>
+          <div class="grey__bottom">
+            <div class="grey__address inline-block-top">Address</div>
+            <div class="grey__input inline-block-top">
+          <div class="grey__folders"></div>
+              <input type="text" value="C:\About me">
+              <div class="grey__icon">
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="grey__go inline-block-top">
+              <div class="grey__go__arrow inline-block-top">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="grey__go__text inline-block-top">Go</div>
+            </div>
+          </div>
+        </div>
+        <div class="content__main">
+          <div class="content__center">
+            <div class="content__left inline-block-top">
+              <div class="left__list" :class="{ active: block_4 }">
+                <div class="list__title">
+                  <div class="list__text">File and Folder Tasks</div>
+                  <div class="list__button" @click="block_4 = !block_4">
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__content">
+                  <div class="list__element">
+                    <div class="list__icon list__icon-1"></div>
+                    <div class="icon__text">Make a new Folder</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-2"></div>
+                    <div class="icon__text">Publish this folder to the Web</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-3"></div>
+                    <div class="icon__text">Share this folder</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__list" :class="{ active: block_5 }">
+                <div class="list__title">
+                  <div class="list__text">Other Places</div>
+                  <div class="list__button" @click="block_5 = !block_5">
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__content">
+                  <div class="list__element">
+                    <div class="list__icon list__icon-4"></div>
+                    <div class="icon__text">Documents and Settings</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-5"></div>
+                    <div class="icon__text">My Documents</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-4"></div>
+                    <div class="icon__text">Shared Documents</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-6"></div>
+                    <div class="icon__text">My Computer</div>
+                  </div>
+                  <div class="list__element">
+                    <div class="list__icon list__icon-7"></div>
+                    <div class="icon__text">My Network Places</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__list" :class="{ active: block_6 }">
+                <div class="list__title">
+                  <div class="list__text">Details</div>
+                  <div class="list__button" @click="block_6 = !block_6">
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="list__arrow">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__content">
+                  <div class="list__small">Sergey Kudinov</div>
+                  <div class="list__small">File Folder</div>
+                  <div class="list__small">Date Modified: Saturday, July 11 2009, 5:46 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="content__right inline-block-top">
+              <div class="about__row about__row-1">Sergey Kudinov</div>
+              <div class="about__row about__row-2">Web-developer (front-end)</div>
+              <div class="about__row about__row-3">Skills</div>
+              <div class="about__row about__row-4">HTML CSS Javascript Vue.js PHP MySQL</div>
+              <div class="about__row about__row-5">Education</div>
+              <div class="about__row about__row-6">Moscow Technical University of Communications and Informatics (MTUCI) <span>Specialist-engineer</span></div>
+              <div class="about__row about__row-12">Email:</div>
+              <a href="mailto:sergiololpro@gmail.com" class="about__row about__row-13">Sergiololpro@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="start__menu">
+      <div class="start__left inlibe-block-top">
+        <div class="start__text">start</div>
+        <div class="start__logo"></div>
+      </div>
+      <div class="start__right inlibe-block-top">
+        <div id="clock"></div>
+      </div>
+      <div class="start__main">
+        <div class="start__element inline-block-top" :class="{ active : page_1 }" @click="showPage(1)">
+          <div class="start__icon"></div>
+          My works
+        </div>
+        <div class="start__element inline-block-top" :class="{ active : page_2 }" @click="showPage(2)">
+          <div class="start__icon"></div>
+          About me
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/libs/jquery/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js" integrity="sha512-PwQ5+jgXxxprNGc80ycHE3spgj6TuDieHe/yTkbEJ+U5aol7dTupi/4VbwHHzlQVW77Vb0GLOIsiYigHgC5vcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
